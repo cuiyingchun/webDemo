@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="webDemo1.css" type="text/css"/>
+	<title>第一个web试写</title>
+</head>
+<body>
+<div id="nav">
+	<div id="logo">
+		<a href="#" title="首页" target="_self"></a>
+	</div>
+	<div class="nav-menu">
+		<ul class="nav-item">
+			<li>免费课程</li>
+			<li>职业路径</li>
+			<li>实战</li>
+			<li>猿问</li>
+			<li>发现</li>
+		</ul>
+	</div>
+	<div class="nav-input">
+		<input type="text" class="search-input"/>
+		<!-- <i class="icon-search"></i> -->
+	</div>
+	<div class="login-area">
+		<ul>
+			<li>购物车</li>
+			<li>登录</li>
+			<li>注册</li>
+		</ul>
+	</div>
+</div>
+<div id="header">
+	<div class="header-box">
+		<p>2018最新前端面试技巧</p>
+		<p>掌握最新面试技巧，面试题，让你在前端面试中脱颖而出</p>
+		<div class="share-box-warp">
+			<div class="share-box">
+				<a href="#" title="分享到微信"></a>
+				<a href="#" title="分享到微博"></a>
+				<a href="#" title="分享到QQ"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="content">
+	<div id="content-list">
+		<h1>助你突破困境，通过前端面试</h1>
+		<div class="list-box">
+			<div class="list-box-l">
+				<div class="list-box-l-t" style="background-color: #f8e000;">
+					<a href="#">导学视频</a>
+				</div>
+				<div class="list-box-l-f" style="background-color: rgb(255,102,0);">
+					<div class="teacher-box">
+						<a href="#"></a>
+						<div class="teacher-box-info">
+							<a href="#">双月</a><br/>
+							<p>web前端工程师</p>
+						</div>
+					</div>
+					<p class="teacher-box-desc">
+						前端高级工程师，PMP，开源编辑器wangEditor（github 4000 star）作者，现就职于BAT一线互联网公司。他的博客总流量过百万，如《深入理解JS原型和闭包》《深入理解JS异步》等。在慕课网已推出《前端javascript面试技巧》《React模拟大众点评webapp》等教程。
+					</p>
+					<a href="#" class="tmoreBtn">了解讲师&gt;</a>
+				</div>
+			</div>
+			<div class="list-box-r">
+				<div class="list-box-r-t">
+					<a href="#">前端JavaScript基础面试技巧</a>
+					<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识<br/>
+					兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率<br/>
+					借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+				</div>
+				<div class="list-box-r-m">
+					<div class="item-contentf showDiv" id="ftab1">
+						<p><span>111</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+					<div class="item-contentf hideDiv" id="ftab2">
+						<p><span>121</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+					<div class="item-contentf hideDiv" id="ftab3">
+						<p><span>131</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+					<div class="item-contentf hideDiv" id="ftab4">
+						<p><span>122e1</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+					<div class="item-contentf hideDiv" id="ftab5">
+						<p><span>123421</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+				</div>
+				<div class="list-box-r-f">
+					<div class="person-box" id="f">
+						<ul>
+							<li class="current" title="ftab1"></li>
+							<li title="ftab2"></li>
+							<li title="ftab3"></li>
+							<li title="ftab4"></li>
+							<li title="ftab5"></li>
+						</ul>
+					</div>
+					<div class="person-len">已有343同学加入学习</div>
+					<a href="#" target="_self">开始学习</a>
+				</div>
+			</div>
+		</div>
+		<div class="list-box">
+			<div class="list-box-l">
+				<div class="list-box-l-t" style="background-color: #f4cf0f;">
+					<a href="#">导学视频</a>
+				</div>
+				<div class="list-box-l-f" style="background-color: #cc0099;">
+					<div class="teacher-box">
+						<a href="#"></a>
+						<div class="teacher-box-info">
+							<a href="#">双月</a><br/>
+							<p>web前端工程师</p>
+						</div>
+					</div>
+					<p class="teacher-box-desc">
+						前端高级工程师，PMP，开源编辑器wangEditor（github 4000 star）作者，现就职于BAT一线互联网公司。他的博客总流量过百万，如《深入理解JS原型和闭包》《深入理解JS异步》等。在慕课网已推出《前端javascript面试技巧》《React模拟大众点评webapp》等教程。
+					</p>
+					<a href="#" class="tmoreBtn">了解讲师&gt;</a>
+				</div>
+			</div>
+			<div class="list-box-r">
+				<div class="list-box-r-t">
+					<a href="#">前端JavaScript基础面试技巧</a>
+					<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识<br/>
+					兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率<br/>
+					借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+				</div>
+				<div class="list-box-r-m">
+					<div class="item-contents showDiv" id="stab1">
+						<p><span>111</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+					<div class="item-contents hideDiv" id="stab2">
+						<p><span>121</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+					<div class="item-contents hideDiv" id="stab3">
+						<p><span>131</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+					<div class="item-contents hideDiv" id="stab4">
+						<p><span>141</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+					<div class="item-contents hideDiv" id="stab5">
+						<p><span>151</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+				</div>
+				<div class="list-box-r-f">
+					<div class="person-box" id="s">
+						<ul>
+							<li class="current" title="stab1"></li>
+							<li title="stab2"></li>
+							<li title="stab3"></li>
+							<li title="stab4"></li>
+							<li title="stab5"></li>
+						</ul>
+					</div>
+					<div class="person-len">已有343同学加入学习</div>
+					<a href="#" target="_self">开始学习</a>
+				</div>
+			</div>
+		</div>
+		<div class="list-box">
+			<div class="list-box-l">
+				<div class="list-box-l-t" style="background-color: #65f6da;">
+					<a href="#">导学视频</a>
+				</div>
+				<div class="list-box-l-f" style="background-color: #009999;">
+					<div class="teacher-box">
+						<a href="#"></a>
+						<div class="teacher-box-info">
+							<a href="#">双月</a><br/>
+							<p>web前端工程师</p>
+						</div>
+					</div>
+					<p class="teacher-box-desc">
+						前端高级工程师，PMP，开源编辑器wangEditor（github 4000 star）作者，现就职于BAT一线互联网公司。他的博客总流量过百万，如《深入理解JS原型和闭包》《深入理解JS异步》等。在慕课网已推出《前端javascript面试技巧》《React模拟大众点评webapp》等教程。
+					</p>
+					<a href="#" class="tmoreBtn">了解讲师&gt;</a>
+				</div>
+			</div>
+			<div class="list-box-r">
+				<div class="list-box-r-t">
+					<a href="#">前端JavaScript基础面试技巧</a>
+					<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识<br/>
+					兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率<br/>
+					借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+				</div>
+				<div class="list-box-r-m">
+					<div class="item-contentt showDiv" id="ttab1">
+						<p><span>111</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+					<div class="item-contentt hideDiv" id="ttab2">
+						<p><span>121</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+					<div class="item-contentt hideDiv" id="ttab3">
+						<p><span>131</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+					<div class="item-contentt hideDiv" id="ttab4">
+						<p><span>141</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+					<div class="item-contentt hideDiv" id="ttab5">
+						<p><span>151</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+				</div>
+				<div class="list-box-r-f">
+					<div class="person-box" id="t">
+						<ul>
+							<li class="current" title="ttab1"></li>
+							<li title="ttab2"></li>
+							<li title="ttab3"></li>
+							<li title="ttab4"></li>
+							<li title="ttab5"></li>
+						</ul>
+					</div>
+					<div class="person-len">已有343同学加入学习</div>
+					<a href="#" target="_self">开始学习</a>
+				</div>
+			</div>
+		</div>
+		<div class="list-box">
+			<div class="list-box-l">
+				<div class="list-box-l-t" style="background-color: #2c58d4;">
+					<a href="#">导学视频</a>
+				</div>
+				<div class="list-box-l-f" style="background-color: #0066ff;">
+					<div class="teacher-box">
+						<a href="#"></a>
+						<div class="teacher-box-info">
+							<a href="#">双月</a><br/>
+							<p>web前端工程师</p>
+						</div>
+					</div>
+					<p class="teacher-box-desc">
+						前端高级工程师，PMP，开源编辑器wangEditor（github 4000 star）作者，现就职于BAT一线互联网公司。他的博客总流量过百万，如《深入理解JS原型和闭包》《深入理解JS异步》等。在慕课网已推出《前端javascript面试技巧》《React模拟大众点评webapp》等教程。
+					</p>
+					<a href="#" class="tmoreBtn">了解讲师&gt;</a>
+				</div>
+			</div>
+			<div class="list-box-r">
+				<div class="list-box-r-t">
+					<a href="#">前端JavaScript基础面试技巧</a>
+					<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识<br/>
+					兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率<br/>
+					借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+				</div>
+				<div class="list-box-r-m">
+					<div class="item-contentr showDiv" id="rtab1">
+						<p><span>111</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+					<div class="item-contentr hideDiv" id="rtab2">
+						<p><span>112</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+					<div class="item-contentr hideDiv" id="rtab3">
+						<p><span>113</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+					<div class="item-contentr hideDiv" id="rtab4">
+						<p><span>114</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+					<div class="item-contentr hideDiv" id="rtab5">
+						<p><span>115</span>的评论</p>
+						<p>百度高级前端工程师亲授，搞定JS面试题的同时掌握JS基础知识
+							兼顾基础理论与实际应用，轻松应对面试题海，助你提高面试通过几率
+							借面试题掌握整个JS技术知识体系，达到举一反三的目的，与工作无缝对接</p>
+					</div>
+				</div>
+				<div class="list-box-r-f">
+					<div class="person-box" id="r">
+						<ul>
+							<li title="rtab1" class="current"></li>
+							<li title="rtab2"></li>
+							<li title="rtab3"></li>
+							<li title="rtab4"></li>
+							<li title="rtab5"></li>
+						</ul>
+					</div>
+					<div class="person-len">已有343同学加入学习</div>
+					<a href="#" target="_self">开始学习</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrap">
+		<div class="course-card">
+			<a href="#" class="course-card-index"></a>
+			<div class="course-card-content">
+				<a href="#">JavaScript入门</a><br/>
+				<span>入门  4835079</span>
+			</div>
+		</div>
+		<div class="course-card">
+			<a href="#" class="course-card-index"></a>
+			<div class="course-card-content">
+				<a href="#">JavaScript进阶</a><br/>
+				<span>入门  234555</span>
+			</div>
+		</div>
+		<div class="course-card">
+			<a href="#" class="course-card-index"></a>
+			<div class="course-card-content">
+				<a href="#">JavaScript深入浅出</a><br/>
+				<span>入门  243354</span>
+			</div>
+		</div>
+		<div class="course-card">
+			<a href="#" class="course-card-index"></a>
+			<div class="course-card-content">
+				<a href="#">C++入门</a><br/>
+				<span>入门  475329</span>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="topic-box">
+	<div class="topic-item">
+		<dl>
+			<dd>
+				<a href="#">web前端入门到精通</a>
+				<p>有数据显示，2016年Web前端岗位月薪最高达到2-3万元，月平均薪资超过8000元，预计在2017年薪资水平将再一次水涨船高！前端薪资如此诱人，入门有难度吗？对于小白来说，入门前端必是绝佳选择，门槛低、较基础，可以顺利帮你打开通往互联网新世界的大门！迟疑1秒，可能丢失10个offer！慕课网职业路径视频不限期，服务随开随用，让你学的更彻底！</p>
+				<a href="#">查看详情&gt;</a>
+			</dd>
+			<dd>
+				<a href="#">走进Google最强，web前端入门到精通</a>
+				<p>有数据显示，2016年Web前端岗位月薪最高达到2-3万元，月平均薪资超过8000元，预计在2017年薪资水平将再一次水涨船高！前端薪资如此诱人，入门有难度吗？对于小白来说，入门前端必是绝佳选择，门槛低、较基础，可以顺利帮你打开通往互联网新世界的大门！迟疑1秒，可能丢失10个offer！慕课网职业路径视频不限期，服务随开随用，让你学的更彻底！</p>
+				<a href="#">查看详情&gt;</a>
+			</dd>
+			<dd>
+				<a href="#">微信小程序开发</a>
+				<p>有数据显示，2016年Web前端岗位月薪最高达到2-3万元，月平均薪资超过8000元，预计在2017年薪资水平将再一次水涨船高！前端薪资如此诱人，入门有难度吗？对于小白来说，入门前端必是绝佳选择，门槛低、较基础，可以顺利帮你打开通往互联网新世界的大门！迟疑1秒，可能丢失10个offer！慕课网职业路径视频不限期，服务随开随用，让你学的更彻底！</p>
+				<a href="#">查看详情&gt;</a>
+			</dd>
+			<dd>
+				<a href="#">超实用web主流前端框架</a>
+				<p>有数据显示，2016年Web前端岗位月薪最高达到2-3万元，月平均薪资超过8000元，预计在2017年薪资水平将再一次水涨船高！前端薪资如此诱人，入门有难度吗？对于小白来说，入门前端必是绝佳选择，门槛低、较基础，可以顺利帮你打开通往互联网新世界的大门！迟疑1秒，可能丢失10个offer！慕课网职业路径视频不限期，服务随开随用，让你学的更彻底！</p>
+				<a href="#">查看详情&gt;</a>
+			</dd>
+		</dl>
+	</div>
+	<div class="toMore">
+		<a href="#" class="toMoreBtn">更多课程</a>
+	</div>
+</div>
+<div id="footer">
+	<div class="f-info">
+		<div class="f-Menu">
+			<ul>
+				<li>网站首页</li>
+				<li>企业合作</li>
+				<li>人才招聘</li>
+				<li>联系我们</li>
+				<li>讲师推荐</li>
+				<li>常见问题</li>
+				<li>意见反馈</li>
+				<li>莫科大学</li>
+				<li>友情链接</li>
+			</ul>
+		</div>
+		<p>Copyright © 2018 imooc.com All Rights Reserved | 京ICP备 12003892号-11</p>
+	</div>
+	<div class="f-share">
+		<a href="#"></a>
+		<a href="#"></a>
+		<a href="#"></a>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	//tabs页
+	var rIndex=0,fIndex=0,sIndex=0;tIndex=0;
+	var timeoutr,timeoutf,timeouts,timeoutt;
+	var rr=function(){ 
+		if(rIndex>=$('#r li').length){
+			rIndex=0;
+		}else{
+			 $('#r li').removeClass("current");
+			 var $lir = $('#r li').eq(rIndex++);
+	 		 $lir.addClass("current");
+			 console.log($lir);
+			 console.log($lir.attr('title'));
+	 		 $(".item-contentr").removeClass("showDiv");
+	         $(".item-contentr").addClass("hideDiv");
+	         $('#' + $lir.attr('title')).removeClass('hideDiv');
+	         $('#' + $lir.attr('title')).addClass('showDiv');
+		}
+	};
+	var ff = function(){ 
+		if(fIndex>=$('#f li').length){
+			fIndex=0;
+		}else{
+			 $('#f li').removeClass("current");
+			 var $lif = $('#f li').eq(fIndex++);
+	 		 $lif.addClass("current");
+	 		 $(".item-contentf").removeClass("showDiv");
+	         $(".item-contentf").addClass("hideDiv");
+	         $('#' + $lif.attr('title')).removeClass('hideDiv');
+	         $('#' + $lif.attr('title')).addClass('showDiv');
+		}
+	};
+	var ss = function(){ 
+		if(sIndex>=$('#s li').length){
+			sIndex=0;
+		}else{
+			 $('#s li').removeClass("current");
+			 var $lis = $('#s li').eq(sIndex++);
+	 		 $lis.addClass("current");
+	 		 $(".item-contents").removeClass("showDiv");
+	         $(".item-contents").addClass("hideDiv");
+	         $('#' + $lis.attr('title')).removeClass('hideDiv');
+	         $('#' + $lis.attr('title')).addClass('showDiv');
+		}
+	}
+	var tt = function(){ 
+		if(tIndex>=$('#t li').length){
+			tIndex=0;
+		}else{
+			 $('#t li').removeClass("current");
+			 var $lit = $('#t li').eq(tIndex++);
+	 		 $lit.addClass("current");
+	 		 $(".item-contentt").removeClass("showDiv");
+	         $(".item-contentt").addClass("hideDiv");
+	         $('#' + $lit.attr('title')).removeClass('hideDiv');
+	         $('#' + $lit.attr('title')).addClass('showDiv');
+		}
+	}
+	timeoutr=setInterval(rr,2500);
+	timeoutf=setInterval(ff,2500);
+	timeouts=setInterval(ss,2500);
+	timeoutt=setInterval(tt,2500);
+	$('.person-box li').click(function(e) {
+		// console.log($(this));
+          e.preventDefault();                
+          $('.person-box li').removeClass("current");
+          $(this).addClass("current");
+          var add = $(this).attr('title').slice(0,1);
+          // console.log(add);
+          // console.log(add.slice(0,1));
+          $(".item-content"+add).removeClass("showDiv");
+          $(".item-content"+add).addClass("hideDiv");
+          // console.log($('#' + $(this).attr('title')));
+          $('#' + $(this).attr('title')).removeClass('hideDiv');
+          $('#' + $(this).attr('title')).addClass('showDiv');
+      });
+	$('.person-box li').mouseover(function(){
+		var now = $(this).attr('title').slice(0,1);
+		if(now=="r"){
+			clearInterval(timeoutr);
+		}if(now=="t"){
+			clearInterval(timeoutt);
+		}if(now=="s"){
+			clearInterval(timeouts);
+		}if(now=="f"){
+			clearInterval(timeoutf);
+		}
+	})
+	$('.person-box li').mouseout(function(){
+		var now = $(this).attr('title').slice(0,1);
+		console.log(now);
+		if(now=="r"){
+			rr();
+		}if(now=="t"){
+			tt();
+		}if(now=="s"){
+			ss();
+		}if(now=="f"){
+			ff();
+		}
+	})
+});
+</script>
+</html>
