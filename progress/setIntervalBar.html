@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>定时器的进度条</title>
+	<style>
+		.loading{
+			width:100%;
+			height:100%;
+			position: fixed;
+			top:0;
+			left:0;
+			z-index:100;
+			background-color: white;
+		}
+		.loading .pic{
+			width: 64px;
+			height:64px;
+			background:url(images/loading.gif);
+			position:absolute;
+			top:0;
+			left:0;
+			bottom:0;
+			right:0;
+			margin:auto;
+		}
+	</style>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+	$(function(){
+
+		var loading="<div class='loading'><div class='pic'></div></div>"
+		$("body").append(loading);
+
+		setInterval(function(){
+			$('.loading').fadeOut();
+		},3000);
+	})
+	</script>
+</head>
+<body>
+
+<!-- <div class="loading">
+	<div class="pic"></div>
+</div> -->
+
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525917652144&di=c4857aa63951e995633db33ec2a796b6&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F5%2F532931489604e.jpg" alt="">
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525917652144&di=f5497ce74ea0b7af25142ff216fc5ae9&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimage%2Fc0%253Dshijue1%252C0%252C0%252C294%252C40%2Fsign%3D12fc59ad052442a7ba03f5e6b92ac73e%2Fd833c895d143ad4b5dbe25ee88025aafa40f060f.jpg" alt="">
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525917652144&di=b49455a50a97164c8d520e6fe053c43b&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F9825bc315c6034a81c94dd93c1134954092376a9.jpg" alt="">
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525917652143&di=e6bb4235d6fc2fc87f045a1feeaa8757&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fcdbf6c81800a19d8a1af34d139fa828ba71e46b1.jpg" alt="">
+</body>
+</html>
