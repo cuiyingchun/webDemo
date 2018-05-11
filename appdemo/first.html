@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>trip</title>
+	<meta name="viewport" width="decive-width,initial-width=1">
+<style>
+	*{
+		padding:0;
+		margin:0;
+	}
+	html,body{
+		height:100%;
+		width:100%;
+		position: relative;
+		background-color:#f3eded;
+	}
+	header{
+		z-index: 11;
+	}
+	.index{
+		width:100%;
+		height:100%;
+	}
+	.top{
+		width:100%;
+		padding:10px 0;
+		background-color:#09e2cc;
+		text-align: center;
+		color:white;
+		font-size:20px;
+		position: relative;
+	}
+	.top span:first-child{
+		position: absolute;
+		top:30%;
+		left:20px;
+	}
+	.my{
+		position: absolute;
+		right:20px;
+		top:25%;
+		width:40px;
+		height:40px;
+		background:url(github.png) center center;
+        background-size:100%;
+        border-radius: 50%;
+	}
+	.swiper{
+		position: relative;
+		top:-10px;
+	}
+	.pic{
+            width: 100%;
+            height: 300px;
+            margin: 10px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .pic-content{
+            width: 99999px;
+            height: 300px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+
+        }
+        .pic-content img{
+            float: left;
+        }
+        .pos{
+            position: absolute;
+            left: 50%;
+            margin:0 -50px 0;
+            bottom: 5px;
+            width: 100px;
+            height: 20px;
+            list-style: none;
+        }
+        .pos li{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            float: left;
+            margin-left: 10px;
+            background-color: white;
+        }
+        .pos .first{
+            background-color: #09e2cc;
+        }
+        .scrollBox{
+        	transform:translate(0px,-100px);
+        	height:80%;
+        }
+        .content{
+        	margin:30px;
+        	height:86%;
+        	overflow: scroll;
+        }
+        .iconBox{
+        	position: relative;
+        	width:90%;
+        	margin:20px auto;
+        }
+        .iconBox ul {
+        	width:100%;
+        }
+        .iconBox ul:after {
+        	content: "";
+        	display: block;
+        	clear:both;
+        	text-align: center;
+        }
+        .iconBox ul li{
+        	float:left;
+        	width:25%;
+        	list-style: none;
+        }
+        .icon{
+        	width:100px;
+        	margin:10px auto;
+        	display: block;
+        }
+        .icon img{
+        	border-radius: 50%;
+        	width:100px;
+        	height:100px;
+        }
+        .icon p{
+        	text-align: center;
+        	font-size:22px;
+        	margin-top: 10px;
+        }
+        .listBox{
+        	font-size:20px;
+        	margin-top:30px;
+        	width:100%;
+        }
+        h4{
+        	margin:20px;
+        }
+        .list{
+        	height:320px;
+        	width:100%;
+        }
+        .listcon{
+        	display: inline-block;
+        }
+        .listcon:first-child{
+        	margin-right: 20px;
+        }
+        .listcon p{
+        	text-align: center;
+        	font-size:22px;
+        }
+        .footer{
+        	height:6%;
+        	position: absolute;
+        	bottom: 0;
+        	left:0;
+        	width:100%;
+        	background-color:#09e2cc;
+        }
+        .footer ul li{
+        	float: left;
+        	width: 20%;
+        	list-style: none;
+        }
+        .bar{
+        	margin:7px auto;
+        	font-size:20px;
+        	text-align: center;
+        	color:white;
+        }
+        .bar a{
+			text-decoration: none;
+			color:white;
+        }
+        .bar img{
+        	width:60px;
+        	height:60px;
+        	border-radius: 50%;
+        }
+        .add{
+        	width:80px;
+        	height: 80px;
+        	border-radius: 50%;
+        	background-color: white;
+        	margin:7px auto;
+        	font-size:60px;
+        	color:#09e2cc;
+        	text-align: center;
+        }
+        .footerActive{
+        	background-color: #0fb5a3;
+        }
+
+        .loading {
+			text-align: center;
+			line-height: 100px;
+			height: 100px;
+			width: 100%;
+			z-index: 0;
+			opacity: 0;
+		}
+        ::-webkit-scrollbar{
+        	display: none;
+        }
+</style>
+<body>
+<div class="index">
+	<header>
+	<div class="top">
+		<span>山东[切换]</span>
+		<h1>首页</h1>
+		<span class="my"></span>
+	</div>
+	<div class="swiper">
+			<div class="pic">
+	        <div class="pic-content">
+               <img src="33.jpg">
+               <img src="44.jpg">
+               <img src="55.jpg">
+               <img src="33.jpg">
+               <img src="44.jpg">
+	        </div>
+	        <ul class="pos">
+	            <li class="first"></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	        </ul>
+	    </div>
+	</div>
+	</header>
+	<div class="scrollBox">
+		<div class="loading">
+			 	<img src="loading.gif"/>
+			 </div>
+		<div class="content">
+			<div class="iconBox">
+				<ul>
+					<li>
+						<div class="icon">
+							<img src="11.jpg">
+							<p>机票</p>
+						</div>
+					</li>
+					<li>
+						<div class="icon">
+							<img src="11.jpg">
+							<p>火车票</p>
+						</div>
+					</li>
+					<li>
+						<div class="icon">
+							<img src="11.jpg">
+							<p>酒店</p>
+						</div>
+					</li>
+					<li>
+						<div class="icon">
+							<img src="11.jpg">
+							<p>美食</p>
+						</div>
+					</li>
+					<li>
+						<div class="icon">
+							<img src="11.jpg">
+							<p>扫码</p>
+						</div>
+					</li>
+					<li>
+						<div class="icon">
+							<img src="11.jpg">
+							<p>景点</p>
+						</div>
+					</li>
+					<li>
+						<div class="icon">
+							<img src="11.jpg">
+							<p>日历</p>
+						</div>
+					</li>
+					<li>
+						<div class="icon">
+							<img src="11.jpg">
+							<p>娱乐</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="listBox">
+				<h4>精品推荐</h4>
+				<div class="list">
+					<div class="listcon">
+						<img src="22.jpg" height="280px" width="440px"><p>天安门3天行</p>
+					</div>
+					<div class="listcon">
+						<img src="22.jpg" height="280px" width="440px"><p>天安门4天行</p>
+					</div>
+				</div>
+				<div class="list">
+					<div class="listcon">
+						<img src="22.jpg" height="280px" width="440px"><p>天安门3天行</p>
+					</div>
+					<div class="listcon">
+						<img src="22.jpg" height="280px"width="440px"><p>天安门4天行</p>
+					</div>
+				</div>
+				<div class="list">
+					<div class="listcon">
+						<img src="22.jpg" height="280px" width="440px"><p>天安门3天行</p>
+					</div>
+					<div class="listcon">
+						<img src="22.jpg" height="280px" width="440px"><p>天安门4天行</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<ul>
+			<li class="footerActive">
+				<div class="bar">
+                <a href="#"> 
+					<img src="11.jpg">
+					<p>首页</p>
+                    </a>
+				</div>
+			</li>
+			<li>
+				<div class="bar">
+                <a href="search.html"> 
+					<img src="11.jpg">
+					<p>搜索</p>
+                </a>
+				</div>
+			</li>
+			<li>
+				<div class="add">+</div>
+			</li>
+			<li>
+				<div class="bar">
+                    <a href="second.html"> 
+					<img src="11.jpg">
+					<p>推荐</p>
+                    </a>
+				</div>
+			</li>
+			<li>
+				<div class="bar">
+                    <a href="person.html"> 
+					<img src="11.jpg">
+					<p>个人</p>
+                    </a>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<script src="jquery.js"></script>
+<script src="slide.js"></script>
+<script>        
+  $(function(){
+            //每个固定的时间移动图片
+            var timer = setInterval(picLoop,3000);
+            var index = 0;
+            function picLoop(){
+                index++;
+                if (index==5) {index=0;}
+                $(".pic-content").animate({"left":-980*index},300);
+                $(".pos li").eq(index).css("background-color","#09e2cc")
+                       .siblings().css("background-color","white");
+            }
+
+            //定时器的控制
+            $(".pic").hover(function(){
+                clearInterval(timer);
+            },function(){
+                timer = setInterval(picLoop,3000);
+            })
+
+            $(".pos li").mouseover(function(){
+                $(this).css("background-color","#09e2cc")
+                       .siblings().css("background-color","white");
+                index = $(this).index();
+                $(".pic-content").animate({"left":-980*index},300);
+
+            })
+
+
+            slide(".scrollBox", 100, function (e) {
+			  var that = this;
+			  setTimeout(function () {
+			   that.back.call();
+			  }, 2000);
+			 });
+
+        })
+  </script>
+</body>
+</html>

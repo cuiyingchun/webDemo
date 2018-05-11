@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>other</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<body>
+<div data-role="page" data-theme="b" id="other">
+	<div data-role="header">
+		<h1>其他页面</h1>
+	</div>
+	<div data-role="content" >
+	<p>111111111111</p>
+		<form method="post" action="">
+		<div data-role="fieldcontain">
+			<label for="fname">name:</label>
+			<input type="text" name="fname" id="fname">
+			<lable for="pass" class="ui-hidden-accessible">pass:</lable>
+			<input type="text" id="pass" placeholder="姓名。。">
+			<label for="name">name:</label>
+			<input type="text" name="fname" id="name" data-role="none">
+			<label for="info">cjeig:</label>
+			<textarea id="info"></textarea>
+			<label for="search">search:</label>
+			<input type="search" id="search">
+			</div>
+
+			<fieldset data-role="controlgroup">
+				<legend>cfmojwgi:</legend>
+				<label for="male">male</label>
+				<input type="radio" checked name="gender" id="male" value="male">
+				<label for="female">female</label>
+				<input type="radio" id="female" name="gender" value="female">
+			</fieldset>
+
+			<fieldset data-role="controlgroup" data-type="horizontal">
+				<legend>cnoewingfo:</legend>
+				<label for="male">male</label>
+				<input type="checkbox" name="gender" id="male" value="male">
+				<label for="female">female</label>
+				<input type="checkbox" id="female" name="gender" value="female">
+			</fieldset>
+
+			<fieldset data-role="fieldcontain">
+				<label for="day">date:</label>
+				<select name="day" id="day" multiple data-native-menu="false">
+				<optgroup label="weekdays">
+					<option value="mon">1</option>
+					<option value="tue">2</option>
+					<option value="wed">3</option>
+				</optgroup>
+				<optgroup label="weekends">
+					<option value="tue">2</option>
+					<option value="wed">3</option>
+				</optgroup>
+				</select>
+			</fieldset>
+
+			<div data-role="fieldcontain">
+				<!-- <label for="points">points</label>
+				<input type="range" name="points" id="points" value="50" min="0" max="100"> -->
+				<label for="points">points222</label>
+				<input type="range" name="points" id="points" value="50" min="0" max="100" data-highlight="true">
+			</div>
+
+			<label for="switch">cfnijeg:</label>
+			<select name="switch" id="switch" data-role="slider">
+				<option value="on">on</option>
+				<option value="off" selected>off</option>
+			</select>
+		</form>
+	</div>
+	<div data-role="footer">
+		<div data-role="navbar">  
+		<ul>  
+		<li><a href="#aa" class="ui-btn-active ui-state-persist">Friends</a></li>  
+		<li><a href="#aa">Albums</a></li>  
+		<li><a href="#aa">Emails</a></li>  
+		</ul> 
+		</div>
+	</div>
+	<div data-role="page" id="aa"></div>
+</div>
+</body>
+<script>
+	$(document).on('pageinit','#other',function(){
+		// $('p').on('tap',function(){
+		// 	$(this).hide();
+		// })
+		// $('p').on('taphold',function(){
+		// 	$(this).hide();
+		// })
+		$('p').on('swiper',function(){
+				$(this).hide();
+			})
+		$(document).on('scrollstart',function(){
+			console.log("kais");
+		})
+		$(document).on('scrollstop',function(){
+			console.log("nviegn");
+		})
+		$(window).on('orientationchange',function(event){
+			console.log(event.orientation);
+			//有landscape 90和portrait 0
+		})
+	})
+</script>
+</html>

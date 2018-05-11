@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>trip</title>
+	<meta name="viewport" width="decive-width,initial-width=1">
+<style>
+	*{
+        padding:0;
+        margin:0;
+    }
+    html,body{
+        height:100%;
+        width:100%;
+        position: relative;
+        background-color:#f3eded;
+    }
+    .index{
+        width:100%;
+        height:100%;
+    }
+    .top{
+        width:100%;
+        padding:10px 0;
+        background-color:#09e2cc;
+        text-align: center;
+        color:white;
+        font-size:20px;
+        position: relative;
+    }
+    .top span:first-child{
+        position: absolute;
+        top:30%;
+        left:20px;
+    }
+    .my{
+        position: absolute;
+        right:20px;
+        top:25%;
+        width:40px;
+        height:40px;
+        background:url(github.png) center center;
+        background-size:100%;
+        border-radius: 50%;
+    }
+    .content{
+    	margin:30px;
+    	height:63%;
+    	overflow: scroll;
+    }
+    .tabs{
+        text-align: center;
+        margin:0 auto;
+        height:70px;
+        width:100%;
+    }
+    .tabs ul{
+        font-size: 0;
+    }
+    .tabs ul li{
+        display: inline-block;
+        border:1px solid #09e2cc;
+        padding:10px 20px;
+        background-color: white;
+        list-style: none;
+        font-size: 20px;
+    }
+    .now{
+        background-color: #09e2cc !important;
+        color:white;
+        font-size: 20px;
+        box-shadow: 0 0px 2px gray;
+    }
+    .footer{
+    	height:6%;
+    	position: absolute;
+    	bottom: 0;
+    	left:0;
+    	width:100%;
+    	background-color:#09e2cc;
+    }
+    .footer ul li{
+    	float: left;
+    	width: 20%;
+    	list-style: none;
+    }
+    .bar{
+    	margin:7px auto;
+    	font-size:20px;
+    	text-align: center;
+    	color:white;
+    }
+     .bar a{
+            text-decoration: none;
+            color:white;
+        }
+    .bar img{
+    	width:60px;
+    	height:60px;
+    	border-radius: 50%;
+    }
+    .add{
+    	width:80px;
+    	height: 80px;
+    	border-radius: 50%;
+    	background-color: white;
+    	margin:7px auto;
+    	font-size:60px;
+    	color:#09e2cc;
+    	text-align: center;
+    }
+    .perImg{
+        height:400px;
+        background:url(112.png) center center;
+        background-size: 100%;
+        margin-top: -3px;
+    }
+    .perName{
+        width:200px;
+        margin:0 auto;
+        padding:50px;
+    }
+    .perName img{
+        border-radius: 50%;
+        height:200px;
+        width:200px;
+        border:8px solid white;
+    }
+    .perName p{
+        font-size:24px;
+        color:black;
+        text-align: center;
+        line-height: 60px;
+    }
+    .wrap{
+        background-color: white;
+        border-radius: 15px;
+    }
+    .wrap ul li{
+        display: inline-block;
+        padding:20px;
+        text-align: center;
+        width: 20%;
+        font-size:22px;
+    }
+    .wrap span:last-child{
+        position: relative;
+        top:-12px;
+        margin-left: 5px;
+    }
+    .wrap span:first-child{
+        background:url(github.png) center center;
+        background-size:100%;
+        width:40px;
+        height:40px;
+        border-radius: 50%;
+        display: inline-block;
+        line-height: 40px;
+    }
+    .detailBox{
+        background-color: white;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+    .detailBox ul li{
+        display: block;
+        border-bottom: 1px solid #09e2cc33;
+        padding:20px;
+        font-size:20px;
+    }
+    .detailBox ul li:hover{
+        background-color: #09e2cc33;
+    }
+    .gt{
+        float:right;
+    }
+    .tomore span:nth-of-type(2){
+        line-height: 40px;
+        position: relative;
+        top:-10px;
+    }
+    .tomore span:nth-of-type(3){position: relative;top:15px;}
+    .tomore span:first-child{
+        background:url(github.png) center center;
+        background-size:100%;
+        width:40px;
+        height:40px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: inline-block;
+        line-height: 40px;
+    }
+    .footerActive{
+            background-color: #0fb5a3;
+        }
+</style>
+<body>
+<div class="index">
+	<header>
+	<div class="top">
+     <span>&lt; 返回</span>
+        <h1>个人中心</h1>
+        <span class="my"></span>
+    </div>   
+     <div class="perImg">
+        <div class="perName">
+            <img src="11.jpg">
+            <p>李女士</p>
+            <p>积分：34389</p>
+        </div>
+     </div>
+	</header>
+	<div class="content">
+       <div class="wrap">
+           <ul>
+               <li><span></span><span>全部订单</span></li>
+               <li><span></span><span>应付款</span></li>
+               <li><span></span><span>待付款</span></li>
+               <li><span></span><span>已到</span></li>
+           </ul>
+       </div>
+		<div class="detailBox">
+           <ul>
+               <li>
+                <div class="tomore">
+                    <span></span>
+                    <span>常用信息</span>
+                     <span class="gt">&gt;</span>
+                </div>
+               </li>
+                <li>
+                <div class="tomore">
+                    <span></span>
+                    <span>旅行日程</span>
+                     <span class="gt">&gt;</span>
+                </div>
+               </li>
+                <li>
+                <div class="tomore">
+                    <span></span>
+                    <span>我的收藏</span>
+                     <span class="gt">&gt;</span>
+                </div>
+               </li>
+                <li>
+                <div class="tomore">
+                    <span></span>
+                    <span>我的订阅</span>
+                     <span class="gt">&gt;</span>
+                </div>
+               </li>
+               <li>
+                <div class="tomore">
+                    <span></span>
+                    <span>我的商城</span>
+                    <span class="gt">&gt;</span>
+                </div>
+               </li>
+           </ul>
+       </div>
+	</div>
+	<div class="footer">
+		<ul>
+			<li>
+				<div class="bar">
+                <a href="first.html"> 
+					<img src="11.jpg">
+					<p>首页</p>
+                    </a>
+				</div>
+			</li>
+			<li>
+				<div class="bar">
+                <a href="search.html"> 
+					<img src="11.jpg">
+					<p>搜索</p>
+                </a>
+				</div>
+			</li>
+			<li>
+				<div class="add">+</div>
+			</li>
+			<li>
+				<div class="bar">
+                    <a href="second.html"> 
+					<img src="11.jpg">
+					<p>推荐</p>
+                    </a>
+				</div>
+			</li>
+			<li class="footerActive">
+				<div class="bar">
+                    <a href="#"> 
+					<img src="11.jpg">
+					<p>个人</p>
+                    </a>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<script src="jquery.js"></script>
+<script>        
+  $(function(){
+    
+  })      
+  </script>
+</body>
+</html>
