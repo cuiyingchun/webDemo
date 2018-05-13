@@ -1,0 +1,13 @@
+.menu-right {
+  float: right;
+}
+.menu-right ul {
+  height: 50px;
+}
+.menu-right ul li {
+  float: right;
+}
+.menu-right ul li a {
+  color: #777;
+  padding: 1px 20px;
+}
